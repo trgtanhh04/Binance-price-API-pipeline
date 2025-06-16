@@ -105,8 +105,9 @@ This project implements a real-time data pipeline for collecting, processing, an
 ---
 
 ### 3.3. Load
+
 <p align="center">
-<img src="https://raw.githubusercontent.com/trgtanhh04/Binance-price-API-pipeline/blob/main/images/db.png" width="100%" alt="airflow">
+<img src="https://raw.githubusercontent.com/trgtanhh04/Binance-price-API-pipeline/main/images/db.png" width="100%" alt="airflow">
 </p>
 
 
