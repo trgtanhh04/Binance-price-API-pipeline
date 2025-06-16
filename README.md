@@ -8,6 +8,23 @@ This project implements a real-time data pipeline for collecting, processing, an
 
 ## 2. Architecture Overview
 
+```
+├── images/
+├── jars/
+├── src/
+│   ├── Extract/
+│   │   └── 22120017.py
+│   ├── Load/
+│   │   └── 22120017.py
+│   └── Transform/
+│       ├── 22120017_moving.py
+│       └── 22120017_zscore.py
+├── tmp/
+├── docker-compose.yml
+├── instruction.txt
+└── README.md
+```
+
 **Stages:**
 1. **Extract:** Collects BTC price data from Binance API and publishes to Kafka.
 2. **Transform:** 
