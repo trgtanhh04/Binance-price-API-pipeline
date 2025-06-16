@@ -105,6 +105,10 @@ This project implements a real-time data pipeline for collecting, processing, an
 ---
 
 ### 3.3. Load
+<p align="center">
+<img src="https://raw.githubusercontent.com/trgtanhh04/Binance-price-API-pipeline/blob/main/images/db.png" width="100%" alt="airflow">
+</p>
+
 
 - **Functionality:**
   - Reads from Kafka topic `btc-price-zscore`.
