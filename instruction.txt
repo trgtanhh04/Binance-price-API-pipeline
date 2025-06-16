@@ -1,0 +1,18 @@
+
+# btc-price
+
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --delete --topic btc-price 
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --create --topic btc-price --partitions 1 --replication-factor 1
+docker exec -it kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic btc-price --from-beginning
+
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --list
+
+rm -rf /tmp/checkpoint_*
+
+# btc-moving
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --delete --topic btc-price-moving 
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --create --topic btc-price-moving --partitions 1 --replication-factor 1
+docker exec -it kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic btc-price-moving --from-beginning
+
+docker exec -it kafka kafka-topics --bootstrap-server localhost:29092 --list
+
