@@ -15,7 +15,7 @@ This project implements a real-time data pipeline for collecting, processing, an
    - Computes Z-scores for each price against the moving statistics, publishes to Kafka.
 3. **Load:** Reads Z-score data from Kafka and writes to MongoDB.
 4. **Bonus:** Finds the shortest window after each price record where the price increases or decreases.
-
+S
 ---
 ## 3. Workflow
 
@@ -158,7 +158,7 @@ This project implements a real-time data pipeline for collecting, processing, an
 
 ---
 
-## 4. Technologies Used
+## 5. Technologies Used
 
 - **Kafka:** For real-time data streaming.
 - **Spark Structured Streaming:** For windowed/statistical processing.
@@ -167,25 +167,13 @@ This project implements a real-time data pipeline for collecting, processing, an
 
 ---
 
-## 5. How to Run
+## 6. How to Run
 
 1. **Start Kafka and MongoDB.**
 2. **Run the Extract producer (fetches from Binance and pushes to Kafka).**
 3. **Run the Transform Spark jobs (process and publish to Kafka).**
 4. **Run the Load Spark job (writes Z-score to MongoDB).**
 5. **(Bonus) Run the Spark job for shortest increasing/decreasing price window.**
-
----
-
-## 6. Screenshots & Explanations
-
-Include key screenshots in your report, such as:
-- MongoDB Atlas user and IP setup.
-- Kafka topic creation and monitoring.
-- Producer logs showing data push.
-- Spark UI during streaming jobs.
-- MongoDB Compass displaying collections.
-- (Add detailed explanations per screenshot.)
 
 ---
 
@@ -197,8 +185,3 @@ Include key screenshots in your report, such as:
 - [MongoDB Documentation](https://www.mongodb.com/docs/manual/introduction/)
 - [Z-score - Wikipedia](https://en.wikipedia.org/wiki/Standard_score)
 
----
-
-> **Note:**  
-> - Log and screenshot every significant step for your report.
-> - If you encounter problems with code or configuration, debug each step separately.
